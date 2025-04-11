@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About-Timer</title>
+    <link rel="stylesheet" href="/cronometro/src/stop-watch/style.css" />
+    <script src="/cronometro/src/stop-watch/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/01e0f31649.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="container">
+      <img id="watch-face" src="/cronometro/imgs/watch-face.png" alt="watch" />
+      <div class="stop-watch">
+        <div id="link-btns">
+          <div id="link-timer" class="links">
+            <a class="opt-btn" id="opt-btn_timer" href="timer.html"
+              ><i class="fa-solid fa-hourglass-end"></i
+            ></a>
+          </div>
+          <div id="link-stopwatch" class="links active">
+            <a class="opt-btn" id="opt-btn_stopwatch"
+              ><i class="fa-solid fa-stopwatch"></i
+            ></a>
+          </div>
+        </div>
+        <span id="stop-watch_counter">00:00.0</span>
+        <div id="stop-watch_btns">
+          <i class="fa-solid fa-circle-play btn" id="stop-watch_start"></i>
+        </div>
+      </div>
+      <div class="timer"></div>
+    </main>
+  </body>
+</html>

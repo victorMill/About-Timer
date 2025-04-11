@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About-Timer</title>
+    <link rel="stylesheet" href="/cronometro/src/timer/style.css" />
+    <script src="/cronometro/src/timer/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/01e0f31649.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="container">
+      <img id="watch-face" src="/cronometro/imgs/watch-face.png" alt="watch" />
+      <div class="watch">
+        <div id="link-btns">
+          <div id="link-timer" class="links active">
+            <a class="opt-btn" id="opt-btn_timer"
+              ><i class="fa-solid fa-hourglass-end"></i
+            ></a>
+          </div>
+          <div id="link-stopwatch" class="links">
+            <a class="opt-btn" id="opt-btn_stopwatch" href="stop-watch.html"
+              ><i class="fa-solid fa-stopwatch"></i
+            ></a>
+          </div>
+        </div>
+        <input
+          id="watch_counter"
+          type="time"
+          value="00:00:00"
+          step="1"
+          required
+        />
+        <div id="time-btns_container">
+          <div class="time_btns" id="time_30">
+            <span>+0:30</span>
+          </div>
+          <div class="time_btns" id="time_100">
+            <span>+1:00</span>
+          </div>
+          <div class="time_btns" id="time_500">
+            <span>+5:00</span>
+          </div>
+        </div>
+        <div id="watch_btns">
+          <i class="fa-solid fa-circle-play btn" id="start-btn"></i>
+        </div>
+      </div>
+      <div class="timer"></div>
+    </main>
+    <audio src="../src/audio/alarm.mp3" id="alarm"></audio>
+  </body>
+</html>
