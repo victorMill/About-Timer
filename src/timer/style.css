@@ -94,6 +94,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   place-content: center;
   height: 2rem;
   width: 2.5rem;
+  cursor: pointer;
+}
+
+.time_btns:active {
+  background-color: #c4640a;
 }
 
 #watch_btns {
@@ -102,6 +107,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   width: 100%;
   gap: 1rem;
   place-content: center;
+  cursor: pointer;
 }
 
 .btn {
@@ -112,6 +118,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   font-size: 4rem;
   width: 100%;
   color: #e7760c;
+  cursor: pointer;
+}
+
+.btn:active {
+  color: #c4640a;
 }
 
 .blink {

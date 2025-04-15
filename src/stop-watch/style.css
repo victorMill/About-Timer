@@ -78,10 +78,16 @@ img {
   width: 100%;
   gap: 3rem;
   place-content: center;
+  cursor: pointer;
 }
 
 .btn {
   font-size: 4rem;
   width: 100%;
   color: #e7760c;
+  cursor: pointer;
+}
+
+.btn:active {
+  color: #c4640a;
 }
